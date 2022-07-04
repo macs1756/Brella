@@ -142,6 +142,13 @@ a {
   position: relative;
 }
 
+h2 {
+  font-size: calc(18px + 18 * ((100vw - 320px) / 880));
+  color: #214E41;
+  font-weight: 700;
+  line-height: 128%;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -418,4 +425,8 @@ header {
 
 .initial {
   margin-top: calc(70px + 20 * ((100vw - 320px) / 880));
+  padding-top: calc(36px + 129 * ((100vw - 320px) / 880));
+  padding-bottom: calc(62px + 218 * ((100vw - 320px) / 880));
+  padding-left: calc(10px + 95 * ((100vw - 320px) / 880));
+  background: url(../img/initial-image.jpg) 100% 100%/cover;
 }/*# sourceMappingURL=style.css.map */

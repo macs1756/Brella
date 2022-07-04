@@ -2,4 +2,9 @@
 
 .initial{
 	@include adaptiv-value(margin-top,90,70);	
+	@include adaptiv-value(padding-top,165,36);
+	@include adaptiv-value(padding-bottom,280,62);
+	@include adaptiv-value(padding-left,105,10);
+	
+	background: url(../img/initial-image.jpg) 100% 100% /cover;
 }
