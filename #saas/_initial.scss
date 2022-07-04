@@ -5,6 +5,14 @@
 	@include adaptiv-value(padding-top,165,36);
 	@include adaptiv-value(padding-bottom,280,62);
 	@include adaptiv-value(padding-left,105,10);
+	background: url(../img/initial-image.jpg) 100% 100% /cover no-repeat;
+}
+
+.initial__title {
+	max-width: 54%;
+	@include adaptiv-value(margin-bottom,40,15);
+	@media (max-width: $Mb){
+		max-width: 80%;
+	}
 	
-	background: url(../img/initial-image.jpg) 100% 100% /cover;
 }

@@ -428,5 +428,15 @@ header {
   padding-top: calc(36px + 129 * ((100vw - 320px) / 880));
   padding-bottom: calc(62px + 218 * ((100vw - 320px) / 880));
   padding-left: calc(10px + 95 * ((100vw - 320px) / 880));
-  background: url(../img/initial-image.jpg) 100% 100%/cover;
+  background: url(../img/initial-image.jpg) 100% 100%/cover no-repeat;
+}
+
+.initial__title {
+  max-width: 54%;
+  margin-bottom: calc(15px + 25 * ((100vw - 320px) / 880));
+}
+@media (max-width: 600px) {
+  .initial__title {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=style.css.map */
