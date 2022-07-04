@@ -150,7 +150,7 @@ header{
 
 .nav {
 	display: flex;align-items: center;justify-content: center;
-	
+	user-select:none;
 }
 .nav__list {
 	display: flex;align-items: center;justify-content: center;
@@ -229,7 +229,6 @@ header{
 
 
 .login__list-wr {
-	user-select: none;
 	position: absolute;
 	top: 30px;
 	left: 0;
@@ -241,6 +240,7 @@ header{
 	
 }
 .block{
+	user-select: none;
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
@@ -249,13 +249,13 @@ header{
 }
 
 .login__list {
-	user-select: none;
+	
 	border: 1px solid #000;
 	background-color: #214E41;
 	border-radius: 8px;
 }
 .login__list-item {
-	user-select: none;
+	
 	color: #fff;
 	padding: 5px 10px;
 	padding-right: 18px;

@@ -117,22 +117,18 @@ input:focus:-ms-input-placeholder {
 body, html {
   scroll-behavior: smooth;
   font-family: "Raleway";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 img {
   max-width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 a {
   color: inherit;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .content {
@@ -282,6 +278,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .nav__list {
@@ -377,10 +377,6 @@ header {
 }
 
 .login__list-wr {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   position: absolute;
   top: 30px;
   left: 0;
@@ -392,6 +388,10 @@ header {
 }
 
 .block {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -399,20 +399,12 @@ header {
 }
 
 .login__list {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   border: 1px solid #000;
   background-color: #214E41;
   border-radius: 8px;
 }
 
 .login__list-item {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   color: #fff;
   padding: 5px 10px;
   padding-right: 18px;

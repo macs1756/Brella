@@ -15,14 +15,15 @@ $media:820px;
 body,html{
 	scroll-behavior: smooth;
 	font-family: "Raleway";
+	user-select: none;
 }
 img{
 	max-width: 100%;
-	user-select: none;
+	
 }
 a{
 	color: inherit;
-	user-select: none;
+	
 }
 ///////////////////////
 
