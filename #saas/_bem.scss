@@ -1,0 +1,42 @@
+
+$PC:1200px;
+$mini:992px;
+$Tb:767px;
+$Mb:600px;
+$media:820px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+
+
+
+
+body,html{
+	scroll-behavior: smooth;
+	font-family: "Raleway";
+}
+img{
+	max-width: 100%;
+	user-select: none;
+}
+a{
+	color: inherit;
+	user-select: none;
+}
+///////////////////////
+
+.content{
+	margin: 0 auto;
+	max-width: 1200px;
+	@include adaptiv-value(padding-left,20,10);
+	@include adaptiv-value(padding-right,20,10);	
+}
+
+.wrapper{
+	position: relative;
+}
+
+
+
+

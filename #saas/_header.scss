@@ -1,0 +1,264 @@
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	z-index: 6;
+	border-bottom: 1px solid #000;
+	font-weight: 700;
+	color: #214E41;
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@include adaptiv-value(height,90,70);
+	margin: 0 10px;
+}
+
+
+
+
+.header__burger{
+	display: none;
+	@media (max-width: 992px){
+		display: block;
+		width: 28px;
+		height: 28px;
+		position: relative;
+		z-index: 10;
+		&:after{
+			content: "";
+			display: block;
+			background-color: #214E41;
+			border-radius: 50px;
+			width: 20px;
+			height: 2px;
+			position: absolute;
+			top: 6px;
+			left: 3px;
+			transition: all 0.5s linear;
+		}
+		&:before{
+			content: "";
+			display: block;
+			background-color: #214E41;
+			border-radius: 50px;
+			width: 20px;
+			height: 2px;
+			position: absolute;
+			top: 13px;
+			left: 3px;
+			transition: all 0.5s linear;
+		}
+		span{
+			&:after{
+				content: "";
+				display: block;
+				background-color: #214E41;
+				border-radius: 50px;
+				width: 20px;
+				height: 2px;
+				position: absolute;
+				top: 20px;
+				left: 3px;
+				transition: all 0.5s linear;
+			}
+		}
+	}
+	
+}
+
+
+.header__burger_close{
+	@media (max-width: 992px){
+	&:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 13px;
+		left: 3px;
+		transform: rotate(-45deg);
+		transition: all 0.5s linear;
+		
+	}
+	&:before{
+		content: "";
+		display: block;
+		opacity: 0;
+		transition: all 0.5s linear;
+		
+	}
+	span{
+		&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 13px;
+			left: 3px;
+			transform: rotate(45deg);
+			transition: all 0.5s linear;
+		
+		}
+	}
+}
+}
+
+
+
+.header__nav{
+		display: flex;
+		align-items: center;
+}
+
+
+
+.burger__active{
+	display: none;
+	@media (max-width: 992px){
+	overflow: auto;
+	display: block;
+	width: 200px;
+	background-color: #214E41;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	transform: translateX(100%);
+	transition: all 0.6s linear;
+	color: #fff;
+	padding-bottom: 20px;
+	}
+}
+
+
+.burger__open{
+	transition: all 0.6s linear;
+	transform: translateX(0%);
+}
+
+.nav{
+	@media (max-width: $Mb){
+		display: none;
+	}	
+}
+
+
+.nav {
+	display: flex;align-items: center;justify-content: center;
+	
+}
+.nav__list {
+	display: flex;align-items: center;justify-content: center;
+	@media (max-width: 992px){
+		flex-direction: column;
+		
+		@include adaptiv-value(font-size,30,20);
+		line-height: 150%;	
+	}
+	
+	li{
+		@include adaptiv-value(margin-right,50,0);
+		transition: all 0.3s linear;
+		@media (max-width: 992px){
+			margin-right: 0;
+		}
+		
+		@media(any-hover: hover){&:hover{
+			color: #050d0b;
+			transition: all 0.3s linear;
+			
+		}}
+	}
+	
+}
+
+.nav__btn-link {
+	@media (max-width: $Mb){
+		display: none;
+	}
+	
+	display: block;
+	color: #fff;
+	background-color: #fff;
+	padding: 10px 14px;
+	background: #43806C;
+	border-radius: 6px;
+	transition: all 0.3s linear;
+	
+	@include adaptiv-value(margin-left,20,0);
+	@media(any-hover: hover){&:hover{
+		background-color: #225b4d;
+		transition: all 0.3s linear;
+		
+	}}
+}
+.nav__login {
+	cursor: pointer;
+	margin: 0 25px;
+	display: flex;align-items: center;justify-content: center;
+	transition: all 0.3s linear;
+	position: relative;
+	&-span{
+		margin-right: 5px;
+	}
+	@media(any-hover: hover){&:hover{
+		color: #050d0b;
+		transition: all 0.3s linear;
+		
+	}}
+	
+}
+.nav__language {
+	margin-right: 10px;
+	user-select: none;
+	@media (max-width: $Mb){
+		margin-right: 25px;
+	}
+	
+	@media(any-hover: hover){&:hover{
+		color: #050d0b;
+		transition: all 0.3s linear;
+		
+	}}
+}
+
+
+.login__list-wr {
+	
+	position: absolute;
+	top: 30px;
+	left: 0;
+	border-radius: 6px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s linear;
+	
+}
+.block{
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+	transition: all 0.3s linear;
+	
+}
+
+.login__list {
+	border: 1px solid #000;
+	background-color: #214E41;
+	border-radius: 8px;
+}
+.login__list-item {
+	color: #fff;
+	padding: 5px 10px;
+	padding-right: 18px;
+	@media(any-hover: hover){&:hover{
+		background-color: #225b4d;
+		transition: all 0.3s linear;
+		
+	}}
+	
+}
