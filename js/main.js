@@ -19,5 +19,7 @@ window.addEventListener('click', function(e){
 	}
 	if(e.target.className === "nav__login-img" || e.target.className === "nav__login-span"){
 		login.classList.toggle("block");
+	}else if(e.target.className !== "nav__login-img" || e.target.className !== "nav__login-span"){
+		login.classList.remove("block");
 	}
 });
