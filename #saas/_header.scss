@@ -243,7 +243,7 @@ header{
 .block{
 	opacity: 1;
 	visibility: visible;
-	pointer-events: all;
+	pointer-events: auto;
 	transition: all 0.3s linear;
 	
 }
@@ -262,7 +262,5 @@ header{
 	@media(any-hover: hover){&:hover{
 		background-color: #225b4d;
 		transition: all 0.3s linear;
-		
 	}}
-	
 }

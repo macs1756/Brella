@@ -24,5 +24,6 @@ window.addEventListener('click', function(e){
 	}else if(e.target.className !== "nav__login-img" || e.target.className !== "nav__login-span"){
 		event.stopPropagation();
 		login.classList.remove("block");
+
 	}
 });

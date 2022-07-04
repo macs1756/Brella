@@ -394,7 +394,7 @@ header {
 .block {
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
+  pointer-events: auto;
   transition: all 0.3s linear;
 }
 
