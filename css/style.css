@@ -433,10 +433,43 @@ header {
 
 .initial__title {
   max-width: 54%;
-  margin-bottom: calc(15px + 25 * ((100vw - 320px) / 880));
+  margin-bottom: calc(20px + 20 * ((100vw - 320px) / 880));
 }
 @media (max-width: 600px) {
   .initial__title {
     max-width: 80%;
   }
+}
+
+.initial__p {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  line-height: 150%;
+  font-weight: 700;
+  margin-bottom: calc(10px + 6 * ((100vw - 320px) / 880));
+  color: #214E41;
+}
+
+.initial__input {
+  display: inline-flex;
+}
+
+.initial__input-input-item {
+  width: calc(200px + 80 * ((100vw - 320px) / 880));
+  height: calc(40px + 20 * ((100vw - 320px) / 880));
+  border-radius: 6px 0 0 6px;
+  padding-left: calc(10px + 10 * ((100vw - 320px) / 880));
+}
+.initial__input-input-item:focus {
+  border: 1px solid skyblue;
+}
+
+.initial__input-button-button {
+  font-weight: 700;
+  color: #fff;
+  background: #43806C;
+  height: calc(40px + 20 * ((100vw - 320px) / 880));
+  line-height: calc(40px + 20 * ((100vw - 320px) / 880));
+  text-align: center;
+  width: calc(60px + 60 * ((100vw - 320px) / 880));
+  border-radius: 0 6px 6px 0;
 }/*# sourceMappingURL=style.css.map */
