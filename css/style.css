@@ -335,6 +335,10 @@ header {
 }
 
 .nav__login {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   margin: 0 25px;
   display: flex;
@@ -373,6 +377,10 @@ header {
 }
 
 .login__list-wr {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: absolute;
   top: 30px;
   left: 0;
@@ -391,12 +399,20 @@ header {
 }
 
 .login__list {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border: 1px solid #000;
   background-color: #214E41;
   border-radius: 8px;
 }
 
 .login__list-item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #fff;
   padding: 5px 10px;
   padding-right: 18px;

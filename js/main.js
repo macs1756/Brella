@@ -18,8 +18,11 @@ window.addEventListener('click', function(e){
 		language.innerText = "EN";
 	}
 	if(e.target.className === "nav__login-img" || e.target.className === "nav__login-span"){
+		event.stopPropagation();
 		login.classList.toggle("block");
+		
 	}else if(e.target.className !== "nav__login-img" || e.target.className !== "nav__login-span"){
+		event.stopPropagation();
 		login.classList.remove("block");
 	}
 });
