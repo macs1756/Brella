@@ -27,7 +27,7 @@ html, body {
   width: 100%;
   font-size: 100%;
   line-height: 167%;
-  font-size: 14px;
+  font-size: calc(14px + 0 * ((100vw - 320px) / 880));
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -121,6 +121,7 @@ body, html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: #214E41;
 }
 
 img {
@@ -514,7 +515,6 @@ header {
 .benefits__achievement {
   position: relative;
   z-index: 5;
-  color: #214E41;
   margin-top: calc(-30px + -20 * ((100vw - 320px) / 880));
   background-color: #fff;
   box-shadow: 4px 4px 8px rgba(60, 59, 59, 0.6);
@@ -570,4 +570,181 @@ header {
 
 .benefits__bottom {
   margin-top: calc(20px + 80 * ((100vw - 320px) / 880));
+  margin-bottom: calc(25px + 95 * ((100vw - 320px) / 880));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .benefits__bottom {
+    flex-direction: column;
+  }
+}
+
+.benefits__bottom-item {
+  flex: 0 0 50%;
+}
+
+.benefits__bottom-text {
+  padding-top: calc(20px + 17 * ((100vw - 320px) / 880));
+  padding-bottom: calc(20px + 17 * ((100vw - 320px) / 880));
+  padding-left: calc(0px + 60 * ((100vw - 320px) / 880));
+  padding-right: calc(0px + 20 * ((100vw - 320px) / 880));
+}
+
+.benefits__bottom-question {
+  display: inline-block;
+  margin-bottom: 20px;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+@media (any-hover: hover) {
+  .benefits__bottom-question:hover {
+    text-decoration: underline;
+  }
+}
+
+.benefits__bottom-title {
+  margin-bottom: calc(20px + 18 * ((100vw - 320px) / 880));
+}
+@media (max-width: 767px) {
+  .benefits__bottom-title {
+    text-align: center;
+  }
+}
+
+.benefits__bottom-p {
+  margin-bottom: calc(0px + 20 * ((100vw - 320px) / 880));
+}
+@media (max-width: 767px) {
+  .benefits__bottom-p {
+    max-width: 90%;
+  }
+}
+
+.benefits__bottom-btn {
+  line-height: 1;
+  letter-spacing: 0.02px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s linear;
+  border-bottom: 2px solid #214E41;
+}
+@media (max-width: 767px) {
+  .benefits__bottom-btn {
+    margin-top: 20px;
+    align-self: start;
+  }
+}
+.benefits__bottom-btn span {
+  padding-left: 5px;
+}
+@media (any-hover: hover) {
+  .benefits__bottom-btn:hover {
+    border-bottom: 2px solid #6ba391;
+    color: #6ba391;
+    transition: all 0.3s linear;
+  }
+}
+.benefits__bottom-btn:active {
+  border-bottom: 2px solid #6ba391;
+  color: #6ba391;
+  transition: all 0.3s linear;
+}
+
+.percent {
+  padding-top: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .percent {
+    padding-top: 0;
+  }
+}
+
+.percent__text {
+  flex: 0 0 50%;
+  margin-right: 5px;
+}
+
+.percent__text-num {
+  font-size: calc(44px + 26 * ((100vw - 320px) / 880));
+  line-height: 130%;
+  margin-bottom: calc(17px + 13 * ((100vw - 320px) / 880));
+  font-weight: 700;
+  font-family: "roboto";
+}
+@media (max-width: 1050px) {
+  .percent__text-num {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .percent__text-num {
+    display: none;
+  }
+}
+
+.percent__text-p {
+  letter-spacing: 0.02px;
+  font-weight: 700;
+}
+@media (max-width: 1050px) {
+  .percent__text-p {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .percent__text-p {
+    margin-bottom: 0;
+  }
+}
+.percent__text-p a {
+  text-decoration: underline;
+}
+
+.percent__body-bottom__text {
+  margin-left: -30px;
+  margin-top: 10px;
+  color: #757575;
+  text-align: center;
+}
+
+.percent__body-stack {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.percent__body-stack-left {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.stack__left-stack {
+  display: block;
+  width: 78px;
+  height: 150px;
+  background: #43806C;
+  margin-bottom: 20px;
+}
+
+.stack__left-stack__name {
+  font-weight: 700;
+}
+
+.stack__right-stack {
+  height: 300px;
+  display: block;
+  width: 78px;
+  background: #43806C;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
