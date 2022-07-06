@@ -122,6 +122,8 @@ body, html {
       -ms-user-select: none;
           user-select: none;
   color: #214E41;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 img {
@@ -157,7 +159,6 @@ header {
   background-color: #fff;
   width: 100%;
   z-index: 6;
-  border-bottom: 1px solid #000;
   font-weight: 700;
   color: #214E41;
 }
@@ -868,4 +869,83 @@ header {
   color: #757575;
   font-size: calc(15px + 3 * ((100vw - 320px) / 880));
   line-height: 167%;
+}
+
+.statistics__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: calc(10px + 40 * ((100vw - 320px) / 880));
+}
+@media (max-width: 767px) {
+  .statistics__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-item__card {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .grid-item__card {
+    align-items: center;
+  }
+}
+
+.grid-item__card-title {
+  text-transform: uppercase;
+  color: #F0A446;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: calc(37px + 23 * ((100vw - 320px) / 880));
+  line-height: 130%;
+  margin-bottom: calc(8px + 5 * ((100vw - 320px) / 880));
+}
+
+.grid-item__card-p {
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 0.02em;
+  color: #214E41;
+}
+@media (max-width: 600px) {
+  .grid-item__card-p {
+    text-align: center;
+  }
+}
+
+.phone {
+  margin-top: calc(20px + 100 * ((100vw - 320px) / 880));
+  display: flex;
+}
+@media (max-width: 767px) {
+  .phone {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .phone {
+    margin-bottom: calc(20px + 50 * ((100vw - 320px) / 880));
+  }
+}
+
+.phone__img {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+@media (max-width: 767px) {
+  .phone__img {
+    margin-bottom: 20px;
+  }
+}
+
+.phone__text-btn {
+  display: inline-block;
+  margin-top: calc(20px + 5 * ((100vw - 320px) / 880));
+  font-weight: 700;
+  border-bottom: 2px solid #214E41;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

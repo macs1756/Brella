@@ -45,3 +45,49 @@
 	@include adaptiv-value(font-size,18,15);
 	line-height: 167%;
 }
+
+
+///////////////////bottom
+
+
+.statistics__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	@include adaptiv-value(grid-gap,50,10);
+	@media (max-width: $Tb){
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
+
+.grid-item__card {
+	display: flex;
+	flex-direction: column;
+@media (max-width: $Mb){
+	align-items: center;
+}
+
+}
+.grid-item__card-title {
+	text-transform: uppercase;
+	color: #F0A446;
+	font-weight: 700;
+	font-family: "Roboto";
+	@include adaptiv-value(font-size,60,37);
+	line-height: 130%;
+	@include adaptiv-value(margin-bottom,13,8);
+	
+	
+}
+.grid-item__card-p {
+font-weight: 700;
+line-height: 170%;
+letter-spacing: 0.02em;
+color: #214E41;
+@media (max-width: $Mb){
+	text-align: center;
+}
+
+}
+

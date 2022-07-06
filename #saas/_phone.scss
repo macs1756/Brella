@@ -1,0 +1,34 @@
+
+
+
+.phone {
+	@include adaptiv-value(margin-top,120,20);
+	display: flex;
+	@media (max-width: $Tb){
+		flex-direction: column-reverse;
+	}
+	@media (max-width: $Tb){
+		@include adaptiv-value(margin-bottom,70,20);		
+	}	
+}
+.phone__img {
+	flex: 0 0 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 30px;
+	@media (max-width: $Tb){
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+
+.phone__text-btn {
+		display: inline-block;
+		@include adaptiv-value(margin-top,25,20);
+		font-weight: 700;
+		border-bottom: 2px solid #214E41;
+		padding-bottom: 5px;
+}
