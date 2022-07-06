@@ -1,0 +1,47 @@
+
+
+
+
+
+.statistics {
+@include adaptiv-value(padding-top,120,20);
+@include adaptiv-value(padding-bottom,120,20);
+}
+
+.statistics__main {
+	@include adaptiv-value(margin-bottom,60,15);
+	display: flex;
+	@media (max-width: $Tb){
+		flex-direction: column;
+	}
+	
+}
+
+
+
+
+.statistics__main-text {
+	flex: 0 0 50%;
+}
+
+.statistics__main-img{
+	@media (max-width: $Tb){
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+.main__text-title {
+	@include adaptiv-value(margin-bottom,38,20);
+	@media (max-width: $Tb){
+		text-align: center;
+	}
+	
+}
+.main__text-p {
+	letter-spacing: 0.02px;
+	color: #757575;
+	@include adaptiv-value(font-size,18,15);
+	line-height: 167%;
+}

@@ -23,6 +23,7 @@
 		justify-content: center;
 		flex-direction: column;
 	}
+	@include adaptiv-value(padding-left,60,20);
 	
 }
 
@@ -50,10 +51,7 @@
 	}
 }
 
-.custom__left {
-	@include adaptiv-value(padding-left,100,20);
-	
-}
+
 .custom__left-subtitle {
 	@include adaptiv-value(margin-bottom,20,15);
 	text-transform: uppercase;

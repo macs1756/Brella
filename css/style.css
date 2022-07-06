@@ -769,6 +769,7 @@ header {
   background: #E3EEED;
   padding-top: calc(20px + 100 * ((100vw - 320px) / 880));
   padding-bottom: calc(20px + 100 * ((100vw - 320px) / 880));
+  padding-left: calc(20px + 40 * ((100vw - 320px) / 880));
 }
 @media (max-width: 767px) {
   .custom__left {
@@ -804,10 +805,6 @@ header {
   margin-bottom: calc(15px + 19 * ((100vw - 320px) / 880));
 }
 
-.custom__left {
-  padding-left: calc(20px + 80 * ((100vw - 320px) / 880));
-}
-
 .custom__left-subtitle {
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 880));
   text-transform: uppercase;
@@ -830,4 +827,45 @@ header {
 }
 .custom__left-list .custom__left-title img {
   padding-left: calc(10px + 25 * ((100vw - 320px) / 880));
+}
+
+.statistics {
+  padding-top: calc(20px + 100 * ((100vw - 320px) / 880));
+  padding-bottom: calc(20px + 100 * ((100vw - 320px) / 880));
+}
+
+.statistics__main {
+  margin-bottom: calc(15px + 45 * ((100vw - 320px) / 880));
+  display: flex;
+}
+@media (max-width: 767px) {
+  .statistics__main {
+    flex-direction: column;
+  }
+}
+
+.statistics__main-text {
+  flex: 0 0 50%;
+}
+
+@media (max-width: 767px) {
+  .statistics__main-img {
+    margin-bottom: 20px;
+  }
+}
+
+.main__text-title {
+  margin-bottom: calc(20px + 18 * ((100vw - 320px) / 880));
+}
+@media (max-width: 767px) {
+  .main__text-title {
+    text-align: center;
+  }
+}
+
+.main__text-p {
+  letter-spacing: 0.02px;
+  color: #757575;
+  font-size: calc(15px + 3 * ((100vw - 320px) / 880));
+  line-height: 167%;
 }/*# sourceMappingURL=style.css.map */
