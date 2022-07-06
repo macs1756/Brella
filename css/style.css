@@ -726,6 +726,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.percent__body-stack-left:not(:last-child) {
   margin-right: 40px;
 }
 
