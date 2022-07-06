@@ -948,4 +948,70 @@ header {
   font-weight: 700;
   border-bottom: 2px solid #214E41;
   padding-bottom: 5px;
+}
+
+.easy-enrollment {
+  background: url(../img/easy-enrollment.jpg) 80% 100%/cover no-repeat;
+  padding-top: calc(35px + 90 * ((100vw - 320px) / 880));
+  padding-bottom: calc(35px + 90 * ((100vw - 320px) / 880));
+  position: relative;
+}
+
+.easy-enrollment-wr {
+  position: relative;
+  z-index: 3;
+  max-width: 500px;
+}
+
+.easy-enrollment__title {
+  text-align: left;
+}
+
+.easy-enrollment__p {
+  color: rgb(24, 23, 23);
+  font-weight: 500;
+}
+
+.cooperation {
+  padding-top: calc(20px + 105 * ((100vw - 320px) / 880));
+  padding-bottom: calc(20px + 105 * ((100vw - 320px) / 880));
+}
+
+.cooperation__title {
+  margin-bottom: calc(15px + 95 * ((100vw - 320px) / 880));
+  text-align: center;
+}
+
+.cooperation__slider {
+  display: flex;
+  align-items: center;
+}
+
+.cooperation__slider-prevArrow, .cooperation__slider-nextArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  flex: 0 0 40px;
+}
+@media (max-width: 600px) {
+  .cooperation__slider-prevArrow, .cooperation__slider-nextArrow {
+    min-width: 20px;
+    min-height: 20px;
+    flex: 0 0 20px;
+    margin: 5px;
+  }
+}
+
+.cooperation__slider-slider {
+  min-width: 0;
+  max-width: 1080px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 150px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

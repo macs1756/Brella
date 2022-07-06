@@ -27,3 +27,28 @@ window.addEventListener('click', function(e){
 
 	}
 });
+
+
+
+new Swiper(".swiper", {
+		loop:true,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: ".cooperation__slider-nextArrow",
+			prevEl: ".cooperation__slider-prevArrow",
+		},
+		breakpoints:{
+			0:{
+				slidesPerView: 1,
+			},
+			400:{
+				slidesPerView: 2,
+			},
+			600: {
+				slidesPerView: 3,
+			},
+			900:{
+				slidesPerView: 5,
+			}
+		},
+});
