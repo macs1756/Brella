@@ -634,6 +634,7 @@ header {
 @media (max-width: 767px) {
   .benefits__bottom-btn {
     margin-top: 20px;
+    margin-left: 10px;
     align-self: start;
   }
 }
@@ -695,7 +696,7 @@ header {
 @media (max-width: 1050px) {
   .percent__text-p {
     max-width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -749,4 +750,84 @@ header {
   width: 78px;
   background: #43806C;
   margin-bottom: 20px;
+}
+
+.custom {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .custom {
+    flex-direction: column;
+  }
+}
+
+.custom__left, .custom__right {
+  flex: 0 1 50%;
+}
+
+.custom__left {
+  background: #E3EEED;
+  padding-top: calc(20px + 100 * ((100vw - 320px) / 880));
+  padding-bottom: calc(20px + 100 * ((100vw - 320px) / 880));
+}
+@media (max-width: 767px) {
+  .custom__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.custom__right {
+  color: #fff;
+  background: #214E41;
+  letter-spacing: 0.02px;
+  line-height: 170%;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom__right-wr {
+  padding-top: calc(20px + 80 * ((100vw - 320px) / 880));
+  padding-bottom: calc(20px + 80 * ((100vw - 320px) / 880));
+  max-width: 66%;
+}
+@media (max-width: 767px) {
+  .custom__right-wr {
+    max-width: 95%;
+  }
+}
+.custom__right-wr p:not(:last-child) {
+  margin-bottom: calc(15px + 19 * ((100vw - 320px) / 880));
+}
+
+.custom__left {
+  padding-left: calc(20px + 80 * ((100vw - 320px) / 880));
+}
+
+.custom__left-subtitle {
+  margin-bottom: calc(15px + 5 * ((100vw - 320px) / 880));
+  text-transform: uppercase;
+  letter-spacing: 0, 2em;
+}
+
+.custom__left-list li {
+  margin-bottom: calc(10px + 8 * ((100vw - 320px) / 880));
+  line-height: 130%;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 880));
+}
+.custom__left-list .custom__left-title {
+  color: #214E41;
+  font-weight: 700;
+  position: relative;
+}
+.custom__left-list .custom__left-title a {
+  display: inline-flex;
+  align-items: center;
+}
+.custom__left-list .custom__left-title img {
+  padding-left: calc(10px + 25 * ((100vw - 320px) / 880));
 }/*# sourceMappingURL=style.css.map */

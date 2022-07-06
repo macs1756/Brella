@@ -115,17 +115,18 @@ text-transform: uppercase;
 	transition: all 0.3s linear;
 	@media (max-width: $Tb){
 		margin-top: 20px;
+		margin-left: 10px;
 		align-self: start;
 	}
 	
-	span{
-		padding-left: 5px;
-	}
-	border-bottom: 2px solid #214E41;
-	@media(any-hover: hover){&:hover{
+	span{padding-left: 5px;}
+
+		border-bottom: 2px solid #214E41;
+		@media(any-hover: hover){&:hover{
 		border-bottom: 2px solid #6ba391;
 		color: #6ba391;
-		transition: all 0.3s linear;	
+		transition: all 0.3s linear;
+
 	}}
 	&:active{
 		border-bottom: 2px solid #6ba391;
@@ -171,7 +172,7 @@ text-transform: uppercase;
 	font-weight: 700;
 	@media (max-width: 1050px){
 	max-width:300px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	}
 	@media (max-width: $Tb){
 		margin-bottom: 0;
@@ -205,8 +206,7 @@ text-transform: uppercase;
 	flex-direction: column;
 	&:not(:last-child){margin-right: 40px;}
 }
-.stack__left-price {
-}
+
 .stack__left-stack {
 	display: block;
 	width: 78px;
