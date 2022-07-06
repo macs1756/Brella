@@ -1,0 +1,59 @@
+
+
+
+.benefits__achievement {
+	position: relative;
+	z-index: 5;
+	color: #214E41;
+	@include adaptiv-value(margin-top,-50,-30);
+	background-color: #fff;
+	box-shadow: 4px 4px 8px rgba(60, 59, 59, 0.6);
+	border-radius: 6px;
+	@include adaptiv-value(padding-top,50,30);
+	@include adaptiv-value(padding-bottom,50,30);
+	@include adaptiv-value(padding-left,50,30);
+	@include adaptiv-value(padding-right,50,30);
+	display: flex;
+	@media (max-width: $Tb){
+		flex-direction: column;
+	}
+	
+}
+
+.achievement-item {
+	flex: 0 1 33.333%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	@media (max-width: $Tb){
+		flex-direction: column;
+		margin-bottom: 20px;
+		text-align: center;
+		align-items: center;
+	}
+	
+}
+.achievement-item__img {
+	flex: 1 0 30px;
+}
+.achievement-item__text {
+	margin-left: 10px;
+}
+.achievement-item__text-title {
+	font-size: 16px;
+	margin-bottom: 7px;
+}
+.achievement-item__text-p {
+	@include adaptiv-value(padding-right,30,20);
+	@media (max-width: $Tb){
+		padding-right: 0;
+	}
+}
+
+
+
+
+.benefits__bottom {
+	@include adaptiv-value(margin-top,100,20);
+	
+}
