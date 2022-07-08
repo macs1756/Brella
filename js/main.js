@@ -51,4 +51,4 @@ new Swiper(".swiper", {
 				slidesPerView: 5,
 			}
 		},
-});
+}); 
